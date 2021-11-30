@@ -1,0 +1,35 @@
+<table style="margin: 0 auto;">
+    <tr style="height: 30px;">
+        <td colspan="3"><div>{{equation}}</div></td>
+    </tr>
+    <tr>
+        <td colspan="2"><input class="shadow p-1 mb-1 " type="number" [(ngModel)]="currentNumber" placeholder="currentNumber"></td>
+        <td><button class="btn btn-outline-danger shadow p-1 mb-1" #btnClear (click)=onClear()>Очистить</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2" #btn1 (click)=numberAdd(btn1.value) value=1>1</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn2 (click)=numberAdd(btn2.value) value=2>2</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn3 (click)=numberAdd(btn3.value) value=3>3</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn4 (click)=numberAdd(btn4.value) value=4>4</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn5 (click)=numberAdd(btn5.value) value=5>5</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn6 (click)=numberAdd(btn6.value) value=6>6</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn7 (click)=numberAdd(btn7.value) value=7>7</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn8 (click)=numberAdd(btn8.value) value=8>8</button></td>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn9 (click)=numberAdd(btn9.value) value=9>9</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-outline-info shadow p-2 mb-2 " #btn0 (click)=numberAdd(btn0.value) value=0>0</button></td>
+        <td><button class="btn btn-outline-secondary shadow p-2 mb-2 " #btnPlus (click)=onClickBtn(btnPlus.value) value="+">+</button></td>
+        <td><button class="btn btn-outline-secondary shadow p-2 mb-2 " #btnMinus (click)=onClickBtn(btnMinus.value) value="-">-</button></td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-outline-secondary shadow p-2 mb-2 " #btnDel (click)=onClickBtn(btnDel.value) value="/">/</button></td>
+        <td><button class="btn btn-outline-secondary shadow p-2 mb-2 " #btnMultiple (click)=onClickBtn(btnMultiple.value) value="*">*</button></td>
+        <td><button class="btn btn-outline-success shadow p-2 mb-2 " #btnEqual (click)=onClickEqualBtn()>=</button></td>
+    </tr>
+
+</table>
